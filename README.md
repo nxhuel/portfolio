@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 # Getting Started with Create React App
 
