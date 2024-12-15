@@ -7,10 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'fondo': "url('../public/assets/fondo.png')",
-      },
-    
     },
   },
   plugins: [

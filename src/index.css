@@ -4,17 +4,52 @@
 
 body {
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.App {
-  font-family: 'Geist Mono', monospace;
+/* .bg-gradient {
+  background: radial-gradient(circle, #1e3a8a, #001426);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0F172A, #1D4ED8, #000000);
+  background-size: 300% 300%;
+  animation: gradientMove 6s ease infinite;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+
+/* @keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+.bg-normal {
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
