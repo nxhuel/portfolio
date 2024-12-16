@@ -1,55 +1,54 @@
-
-
 export const ContentProyect = () => {
     const proyectos = [
         {
-            imagen: 'https://cdn.flyonui.com/fy-assets/components/card/image-9.png',
-            titulo: 'Hola Mundo',
-            proposito: 'Crear un mundo',
+            imagen: '/assets/signo-mas.png',
+            titulo: 'Agregar proyecto',
+            proposito: 'Contactame para trabajar juntos',
             tecnologias: [
-                { src: '/assets/java.png', alt: 'javalogo' },
-                { src: '/assets/java.png', alt: 'javalogo' },
-                { src: '/assets/java.png', alt: 'javalogo' },
             ]
         },
         {
-            imagen: 'https://cdn.flyonui.com/fy-assets/components/card/image-9.png',
-            titulo: 'Proyecto 2',
-            proposito: 'Automatización avanzada',
+            imagen: '/assets/fondo-library.png',
+            titulo: 'Biblioteca online',
+            proposito: 'Sitio web que permite realizar búsquedas y consultas de libros a través de una API.',
             tecnologias: [
-                { src: '/assets/java.png', alt: 'javalogo' },
+                { src: '/assets/javascript.png', alt: 'javascriptlogo' },
+                { src: '/assets/react.png', alt: 'reactlogo' },
+                { src: '/assets/tailwind.png', alt: 'tailwindlogo' },
             ]
         },
         {
-            imagen: 'https://cdn.flyonui.com/fy-assets/components/card/image-9.png',
-            titulo: 'Proyecto 2',
-            proposito: 'Automatización avanzada',
+            imagen: '/assets/fondo-bazar.png',
+            titulo: 'Ventas Bazar API',
+            proposito: 'Desarollo de un sistema de gestión para un bazar, donde se aplico diversas tecnologías y patrones de diseño.',
             tecnologias: [
                 { src: '/assets/java.png', alt: 'javalogo' },
+                { src: '/assets/spring.png', alt: 'springlogo' },
+                { src: '/assets/spring-boot.png', alt: 'spring-bootlogo' },
+                { src: '/assets/postman.png', alt: 'postmanlogo' },
+                { src: '/assets/mysql.png', alt: 'mysqllogo' },
+                { src: '/assets/docker.png', alt: 'dockerlogo' },
             ]
         },
         {
-            imagen: 'https://cdn.flyonui.com/fy-assets/components/card/image-9.png',
-            titulo: 'Proyecto 2',
-            proposito: 'Automatización avanzada',
+            imagen: '/assets/fondo-danza.png',
+            titulo: 'Pagina WEB Bailarina',
+            proposito: 'Sitio web para una bailarina/maestra, donde se pueden consultar clases, horarios, y más información sobre su carrera.',
             tecnologias: [
-                { src: '/assets/java.png', alt: 'javalogo' },
+                { src: '/assets/javascript.png', alt: 'javascriptlogo' },
+                { src: '/assets/react.png', alt: 'reactlogo' },
+                { src: '/assets/tailwind.png', alt: 'tailwindlogo' },
             ]
         },
         {
-            imagen: 'https://cdn.flyonui.com/fy-assets/components/card/image-9.png',
-            titulo: 'Proyecto 2',
-            proposito: 'Automatización avanzada',
+            imagen: '/assets/fondo-agip.png',
+            titulo: 'SÚ AGIP',
+            proposito: 'El sistema de útiles gestiona los pedidos de insumos de librería de todas las áreas del organismo y proporciona información actualizada sobre el stock disponible.',
             tecnologias: [
-                { src: '/assets/java.png', alt: 'javalogo' },
-            ]
-        },
-        {
-            imagen: 'https://cdn.flyonui.com/fy-assets/components/card/image-9.png',
-            titulo: 'Proyecto 2',
-            proposito: 'Automatización avanzada',
-            tecnologias: [
-                { src: '/assets/java.png', alt: 'javalogo' },
+                { src: '/assets/python.png', alt: 'pythonlogo' },
+                { src: '/assets/django.png', alt: 'djangologo' },
+                { src: '/assets/javascript.png', alt: 'javascriptlogo' },
+                { src: '/assets/sql-server.png', alt: 'sql-serverlogo' },
             ]
         },
 
@@ -62,7 +61,7 @@ export const ContentProyect = () => {
                 {proyectos.map((proyecto, index) => (
                     <div
                         key={index}
-                        className="bg-trasparent shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+                        className="rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
                     >
                         <div className="relative group">
                             <figure className="overflow-hidden">
@@ -74,28 +73,36 @@ export const ContentProyect = () => {
                             </figure>
                         </div>
                         <div className="p-6">
-                            <h5 className="text-xl font-bold mb-2 text-white hover:text-primary transition-colors duration-300">
+                            <h5 className="text-xl font-bold mb-2 text-dark hover:text-primary transition-colors duration-300">
                                 {proyecto.titulo}
                             </h5>
-                            <p className="text-white mb-4">{proyecto.proposito}</p>
+                            <p className="text-dark mb-4">{proyecto.proposito}</p>
                             <div className="flex gap-3 mb-4">
                                 {proyecto.tecnologias.map((tecnologia, i) => (
                                     <img
                                         key={i}
                                         src={tecnologia.src}
                                         alt={tecnologia.alt}
-                                        className="w-8 h-8 rounded-full shadow-md hover:scale-110 transition-transform duration-300"
+                                        className="w-auto h-8  hover:scale-110 transition-transform duration-300"
                                     />
                                 ))}
                             </div>
-                            <div className="flex gap-4">
-                                <button className="btn bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
-                                    Más Info
-                                </button>
-                                <button className="btn bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors duration-300">
-                                    Acceder al Código
+                            {index !== 0 ? (
+                                <div className="flex gap-4">
+                                    <button className="btn bg-primary-dark text-white border-none px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
+                                        Más Info
+                                    </button>
+                                    <button className="btn bg-secondary-content border-none  text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+                                        Acceder al Código
+                                    </button>
+                                </div>
+                            ) : (
+                                <div className="flex gap-4">
+                                <button className="btn bg-primary-dark text-white border-none  px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
+                                    Contacto
                                 </button>
                             </div>
+                            )} 
                         </div>
                     </div>
                 ))}

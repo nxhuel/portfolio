@@ -25,10 +25,9 @@ export const ContentContact = () => {
                             <span className=" text-xl">Conecta conmigo</span>
                         </a>
                     </div>
-                    <div className=''>
+                    <div className='pt-4'>
                         <img src="/assets/reunion.png" class="w-[60%] h-auto mx-auto float-start"></img>
                     </div>
-
                 </div>
                 <div>
                     <Form />

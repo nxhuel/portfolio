@@ -45,11 +45,55 @@ code {
   }
 } */
 
-.bg-normal {
-  color: white;
+/* .estandar {
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+} */
+
+.estandar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(200, 200, 200, 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 100% 30px; 
+  color: #333; 
+}
+
+.estandar-divisor {
+  padding: 20px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(200, 200, 200, 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 100% 30px; 
+}
+
+.estandar-dark {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #121212;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 100% 30px; 
+  color: #e0e0e0; 
 }

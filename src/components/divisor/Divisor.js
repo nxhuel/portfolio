@@ -1,9 +1,10 @@
-export const Divisor = ({ logo }) => {
+export const Divisor = ({ Icon, alt }) => {
     return (
-        <div className="divider pr-40 pl-40">
+        <div className="divider divider-neutral h-20 pr-40 pl-40">
             <span className="flex items-center justify-center">
-                <img src={logo.src} alt={logo.alt} className="w-10 h-10" />
+                <Icon className="text-4xl text-gray-700 hover:text-black" aria-label={alt} />
             </span>
         </div>
     );
 };
+

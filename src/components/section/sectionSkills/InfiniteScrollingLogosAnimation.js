@@ -9,16 +9,19 @@ const SkillsLogoData = [
     { src: '/assets/spring-security.png', alt: 'springsecuritylogo' },
     { src: '/assets/mysql.png', alt: 'mysqllogo' },
     { src: '/assets/sql-server.png', alt: 'sqlserverlogo' },
+    { src: '/assets/linux.png', alt: 'linuxlogo' },
+    { src: '/assets/github.png', alt: 'githublogo' },
     { src: '/assets/uml.png', alt: 'umllogo' },
     { src: '/assets/react.png', alt: 'reactlogo' },
     { src: '/assets/tailwind.png', alt: 'tailwindlogo' },
-]
+];
+
 
 export const InfiniteScrollingLogosAnimation = () => {
     return (
         <>
             <div className="container">
-                <h2 className="text-start text-2xl font-bold mb-8 ">
+                <h2 className="text-start text-2xl font-bold mb-8  text-black">
                     HABILIDADES:
                 </h2>
             </div>

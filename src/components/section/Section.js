@@ -5,7 +5,7 @@ import { InfiniteScrollingLogosAnimation } from "./sectionSkills/InfiniteScrolli
 export const Section = () => {
     return (
         <>
-            <main className="p-10 pl-20 pr-20">
+            <main className="pt-20 pl-20 pr-20">
                 <div className="inline-grid grid-cols-2 gap-4">
                     <SectionPresentation />
                     <SectionImage />

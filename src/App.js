@@ -8,29 +8,36 @@ import { ContentAboutMe } from './components/content/ContentAboutMe';
 import { ContentContact } from './components/content/ContentContact';
 import { Footer } from './components/footer/Footer';
 import { Divisor } from './components/divisor/Divisor';
+import BadgeIcon from '@mui/icons-material/Badge';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import Groups2Icon from '@mui/icons-material/Groups2';
+
+
 
 function App() {
-  const divisores = [
-    { src: '/assets/java.png', alt: 'Logo Java' },
-    { src: '/assets/java.png', alt: 'Logo Java' },
-    { src: '/assets/java.png', alt: 'Logo Java' }
-  ];
+
   return (
     <>
-      <div className="bg-normal min-h-screen flex flex-col">
+      <div className="estandar bg-gray-100 min-h-screen flex flex-col">
         <Navbar />
         <Section />
       </div>
-      <Divisor logo={divisores[0]} />
-      <div className="bg-normal min-h-screen flex flex-col">
+      <div className='estandar-divisor'>
+        <Divisor Icon={TerminalIcon} alt="Icono Badge" />
+      </div>
+      <div className="estandar min-h-screen flex flex-col">
         <ContentProyect />
       </div>
-      <Divisor logo={divisores[0]} />
-      <div className="bg-normal min-h-screen flex flex-col">
+      <div className='estandar-divisor'>
+        <Divisor Icon={BadgeIcon} alt="Icono Badge" />
+      </div>
+      <div className="estandar min-h-screen flex flex-col">
         <ContentAboutMe />
       </div>
-      <Divisor logo={divisores[0]} />
-      <div className="bg-normal min-h-screen ">
+      <div className='estandar-divisor'>
+        <Divisor Icon={Groups2Icon} alt="Icono Badge" />
+      </div>
+      <div className="estandar min-h-screen  flex flex-col">
         <ContentContact />
       </div>
       <Footer />

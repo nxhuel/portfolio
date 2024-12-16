@@ -4,49 +4,61 @@ export const ContentAboutMe = () => {
     return (
         <>
             <div className="w-full">
-                <h1 className="text-center text-3xl font-bold mb-8">SOBRE MI</h1>
+                <h1 className="text-center text-4xl font-extrabold text-gray-800 mb-10 tracking-wide">SOBRE MI</h1>
             </div>
-            <main className="container pt-4">
-                <div className=" flex justify-around w-full">
-                    <div>
-                        <h1 className=" text-3xl font-bold mb-8 text-center">Formación académica</h1>
-                        <div className='grid grid-rows-1 grid-flow-col'>
-                            <div class="card sm:max-w-sm">
-                                <figure><img src="https://cdn.flyonui.com/fy-assets/components/card/image-9.png" alt="Watch" /></figure>
-                                <div class="card-body">
-                                    <h5 class="card-title mb-2.5">Analista de sistemas</h5>
-                                    <h6 className=" card-subtitle mb-2.5 italic">IFTS°21 | Abril 2023 - Diciembre 2025 </h6>
-                                    <p class="mb-4">El Instituto de formación tecnica superior n°21 esta enfocada en la operación, programación, el análisis de sistemas informáticos y en fortalecer la identidad como analistas de sistemas.
-                                    </p>
-                                    <div class="card-actions">
-                                        <button class="btn btn-primary">Verstudios complementarios<span><ArrowForwardIosIcon /></span></button>
-                                    </div>
+            <main className="container mx-auto px-6">
+                <div className="flex flex-wrap justify-around gap-10">
+
+                    {/* Formación Académica */}
+                    <section className="max-w-md">
+                        <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center">Formación Académica</h2>
+                        <div className="card bg-white shadow-lg rounded-lg overflow-hidden">
+                            <figure className="bg-gray-100">
+                                <img src="/assets/logo-ifts.png" alt="Logo IFTS" className="w-full h-60 object-contain p-4" />
+                            </figure>
+                            <div className="p-6">
+                                <h5 className="text-lg font-bold text-gray-800 mb-2">Analista de Sistemas</h5>
+                                <h6 className="text-sm text-gray-600 italic mb-4">IFTS°21 | Abril 2023 - Diciembre 2025</h6>
+                                <p className="text-gray-600 leading-relaxed mb-4">
+                                    El Instituto de Formación Técnica Superior N°21 está enfocado en la operación, programación y análisis de sistemas informáticos, fortaleciendo la identidad profesional como analistas de sistemas.
+                                </p>
+                                <div className="text-right">
+                                    <button className="btn border-none bg-primary-dark text-white py-2 px-4 rounded-lg flex items-center gap-2 hover:bg-secondary-content hover:text-black">
+                                        Ver estudios complementarios
+                                        <ArrowForwardIosIcon className="text-sm" />
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <h1 className=" text-3xl font-bold mb-8 text-center">Experiencia laboral</h1>
-                        <div className='grid grid-rows-1 grid-flow-col'>
-                            <div class="card sm:max-w-sm">
-                                <figure><img src="https://cdn.flyonui.com/fy-assets/components/card/image-9.png" alt="Watch" /></figure>
-                                <div class="card-body">
-                                    <h5 className="card-title mb-2.5">Desarrollador de Software</h5>
-                                    <h6 className=" card-subtitle mb-2.5 italic">Pasantía en AGIP | Octubre 2024 - Diciembre 2024 </h6>
-                                    <p class="mb-4">
-                                        Migración del sistema actual hecho en PHP a Python para una posible actualización.<br />
-                                        ● Responsable en mejorar código realizado en Python aplicando principios SOLID.<br />
-                                        ● Trabajo en equipo aplicando metodología programación XP.
-                                    </p>
-                                    <div class="card-actions">
-                                        <button class="btn btn-primary">Ver certificado<span><ArrowForwardIosIcon /></span></button>
-                                    </div>
+                    </section>
+
+                    {/* Experiencia Laboral */}
+                    <section className="max-w-md">
+                        <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center">Experiencia Laboral</h2>
+                        <div className="card bg-white shadow-lg rounded-lg overflow-hidden">
+                            <figure className="bg-gray-100">
+                                <img src="/assets/logo-agip.png" alt="Logo AGIP" className="w-full h-60 object-contain p-4" />
+                            </figure>
+                            <div className="p-6">
+                                <h5 className="text-lg font-bold text-gray-800 mb-2">Desarrollador de Software</h5>
+                                <h6 className="text-sm text-gray-600 italic mb-4">Pasantía en AGIP | Octubre 2024 - Diciembre 2024</h6>
+                                <p className="text-gray-600 leading-relaxed mb-4">
+                                    Migración del sistema actual hecho en PHP a Python para una posible actualización.<br />
+                                    ● Responsable de mejorar código en Python aplicando principios SOLID.<br />
+                                    ● Trabajo en equipo aplicando metodología de programación XP.
+                                </p>
+                                <div className="text-right">
+                                    <button className="btn border-none bg-primary-dark text-white py-2 px-4 rounded-lg flex items-center gap-2 hover:bg-secondary-content hover:text-black">
+                                        Ver certificado
+                                        <ArrowForwardIosIcon className="text-sm" />
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+
                 </div>
             </main>
         </>
     );
-}
+};
