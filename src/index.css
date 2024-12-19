@@ -14,51 +14,27 @@ code {
     monospace;
 }
 
-/* .bg-gradient {
-  background: radial-gradient(circle, #1e3a8a, #001426);
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #0F172A, #1D4ED8, #000000);
-  background-size: 300% 300%;
-  animation: gradientMove 6s ease infinite;
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-} */
-
-/* @keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
-
-/* .estandar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-} */
 
 .estandar {
   padding: 20px;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   height: 100vh;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(200, 200, 200, 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 100% 30px; 
+  color: #333; 
+}
+
+.estandar-responsive {
+  padding: 20px;
+  display: flex;
+  align-items: center;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
   background-image: linear-gradient(
@@ -82,7 +58,7 @@ code {
   background-size: 100% 30px; 
 }
 
-.estandar-dark {
+/* .estandar-dark {
   padding: 20px;
   display: flex;
   align-items: center;
@@ -96,4 +72,4 @@ code {
   );
   background-size: 100% 30px; 
   color: #e0e0e0; 
-}
+} */

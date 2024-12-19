@@ -21,12 +21,12 @@ export const InfiniteScrollingLogosAnimation = () => {
     return (
         <>
             <div className="container">
-                <h2 className="text-start text-2xl font-bold mb-8  text-black">
+                <h2 className="text-start text-xl sm:text-2xl font-bold mb-8  text-black">
                     HABILIDADES:
                 </h2>
             </div>
-            <div className="container flex justify-center">
-                <div className="flex overflow-hidden justify-center items-center pt-2 w-[80%]">
+            <div className="sm:container sm:flex sm:justify-center">
+                <div className="flex overflow-hidden justify-center items-center pt-2 sm:w-[80%] ">
                     <motion.div
                         transition={{
                             duration: 15,
@@ -35,7 +35,7 @@ export const InfiniteScrollingLogosAnimation = () => {
                         }}
                         initial={{ translateX: 0 }}
                         animate={{ translateX: '-50%' }}
-                        className="flex flex-none gap-16 pr-16"
+                        className="flex flex-none gap-4 sm:gap-16 pr-16"
                     >
                         {[...new Array(2)].fill(0).map((_, index) => (
                             <React.Fragment key={index}>
@@ -44,7 +44,7 @@ export const InfiniteScrollingLogosAnimation = () => {
                                         key={alt}
                                         src={src}
                                         alt={alt}
-                                        className="h-15 w-auto flex-none"
+                                        className="h-10 sm:h-12 w-auto flex-none "
                                     />
                                 ))}
                             </React.Fragment>

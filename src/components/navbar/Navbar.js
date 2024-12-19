@@ -12,7 +12,7 @@ export const Navbar = () => {
 
                         <div class="md:hidden">
                             <button type="button" class="collapse-toggle btn btn-outline btn-secondary btn-sm btn-square" data-collapse="#default-navbar-collapse" aria-controls="default-navbar-collapse" aria-label="Toggle navigation">
-                                <span class="icon-[tabler--menu-2] collapse-open:hidden size-4"></span>
+                                <span class="icon-[tabler--menu-2] collapse-open:hidden size-4 "></span>
                                 <span class="icon-[tabler--x] collapse-open:block hidden size-4"></span>
                             </button>
                         </div>

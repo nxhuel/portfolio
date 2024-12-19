@@ -1,7 +1,7 @@
 export const ContentProyect = () => {
     const proyectos = [
         {
-            imagen: '/assets/signo-mas.png',
+            imagen: '/assets/signo-mas-dos.png',
             titulo: 'Agregar proyecto',
             proposito: 'Contactame para trabajar juntos',
             tecnologias: [
@@ -55,9 +55,63 @@ export const ContentProyect = () => {
     ];
 
     return (
+        // <div className="container">
+        //     <h1 className="text-center text-3xl font-bold mb-8">PROYECTOS</h1>
+        //     <main className="grid grid-rows-2 grid-flow-col gap-8">
+        //         {proyectos.map((proyecto, index) => (
+        //             <div
+        //                 key={index}
+        //                 className="rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+        //             >
+        //                 <div className="relative group">
+        //                     <figure className="overflow-hidden">
+        //                         <img
+        //                             src={proyecto.imagen}
+        //                             alt={proyecto.titulo}
+        //                             className="w-full h-48 object-cover group-hover:brightness-75 transition-all duration-300"
+        //                         />
+        //                     </figure>
+        //                 </div>
+        //                 <div className="p-6">
+        //                     <h5 className="text-xl font-bold mb-2 text-dark hover:text-primary transition-colors duration-300">
+        //                         {proyecto.titulo}
+        //                     </h5>
+        //                     <p className="text-dark mb-4">{proyecto.proposito}</p>
+        //                     <div className="flex gap-3 mb-4">
+        //                         {proyecto.tecnologias.map((tecnologia, i) => (
+        //                             <img
+        //                                 key={i}
+        //                                 src={tecnologia.src}
+        //                                 alt={tecnologia.alt}
+        //                                 className="w-auto h-8  hover:scale-110 transition-transform duration-300"
+        //                             />
+        //                         ))}
+        //                     </div>
+        //                     {index !== 0 ? (
+        //                         <div className="flex gap-4">
+        //                             <button className="btn bg-primary-dark text-white border-none px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
+        //                                 Más Info
+        //                             </button>
+        //                             <button className="btn bg-secondary-content border-none  text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+        //                                 Acceder al Código
+        //                             </button>
+        //                         </div>
+        //                     ) : (
+        //                         <div className="flex gap-4">
+        //                         <button className="btn bg-primary-dark text-white border-none  px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
+        //                             Contacto
+        //                         </button>
+        //                     </div>
+        //                     )} 
+        //                 </div>
+        //             </div>
+        //         ))}
+        //     </main>
+        // </div>
+
         <div className="container">
             <h1 className="text-center text-3xl font-bold mb-8">PROYECTOS</h1>
-            <main className="grid grid-rows-2 grid-flow-col gap-8">
+            <main className="sm:grid sm:grid-rows-2 sm:grid-flow-col sm:gap-8">
                 {proyectos.map((proyecto, index) => (
                     <div
                         key={index}
@@ -73,7 +127,7 @@ export const ContentProyect = () => {
                             </figure>
                         </div>
                         <div className="p-6">
-                            <h5 className="text-xl font-bold mb-2 text-dark hover:text-primary transition-colors duration-300">
+                            <h5 className="text-xl font-bold mb-2 text-dark hover:text-orange-500 transition-colors duration-300">
                                 {proyecto.titulo}
                             </h5>
                             <p className="text-dark mb-4">{proyecto.proposito}</p>
@@ -98,16 +152,15 @@ export const ContentProyect = () => {
                                 </div>
                             ) : (
                                 <div className="flex gap-4">
-                                <button className="btn bg-primary-dark text-white border-none  px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
-                                    Contacto
-                                </button>
-                            </div>
-                            )} 
+                                    <button className="btn bg-primary-dark text-white border-none  px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
+                                        Contacto
+                                    </button>
+                                </div>
+                            )}
                         </div>
                     </div>
                 ))}
             </main>
-
         </div>
     );
 };

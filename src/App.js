@@ -18,29 +18,30 @@ function App() {
 
   return (
     <>
-      <div className="estandar bg-gray-100 min-h-screen flex flex-col">
+      <div className="estandar-responsive min-h-screen flex flex-col">
         <Navbar />
         <Section />
       </div>
       <div className='estandar-divisor'>
         <Divisor Icon={TerminalIcon} alt="Icono Badge" />
       </div>
-      <div className="estandar min-h-screen flex flex-col">
+      <div className=" estandar-responsive min-h-screen flex flex-col">
         <ContentProyect />
       </div>
       <div className='estandar-divisor'>
         <Divisor Icon={BadgeIcon} alt="Icono Badge" />
       </div>
-      <div className="estandar min-h-screen flex flex-col">
+      <div className="estandar-responsive min-h-screen flex flex-col">
         <ContentAboutMe />
       </div>
       <div className='estandar-divisor'>
         <Divisor Icon={Groups2Icon} alt="Icono Badge" />
       </div>
-      <div className="estandar min-h-screen  flex flex-col">
+      <div className="estandar-responsive min-h-screen flex flex-col">
         <ContentContact />
       </div>
       <Footer />
+    
     </>
   );
 }
