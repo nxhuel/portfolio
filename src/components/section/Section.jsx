@@ -10,7 +10,7 @@ export const Section = () => {
                     <SectionPresentation />
                     <SectionImage />
                 </div>
-                <div className="sm:grid sm:grid-cols-subgrid sm:col-span-2 sm:p-10">
+                <div className="hidden sm:grid sm:grid-cols-subgrid sm:col-span-2 sm:p-10">
                     <InfiniteScrollingLogosAnimation />
                 </div>
             </main>

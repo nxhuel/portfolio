@@ -5,6 +5,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/flyonui/dist/js/*.js"
   ],
+  "darkMode": "class",
   theme: {
     extend: {
     },
@@ -13,5 +14,6 @@ module.exports = {
     require("flyonui"),
     require("flyonui/plugin")
   ],
+
 }
 

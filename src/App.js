@@ -12,36 +12,33 @@ import BadgeIcon from '@mui/icons-material/Badge';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import Groups2Icon from '@mui/icons-material/Groups2';
 
-
-
 function App() {
-
   return (
     <>
-      <div className="estandar-responsive min-h-screen flex flex-col">
+      <div className="estandar-responsive min-h-screen flex flex-col  dark:bg-neutral-900 dark:text-white ">
         <Navbar />
         <Section />
       </div>
-      <div className='estandar-divisor'>
+      <div className='estandar-divisor dark:bg-neutral-900 dark:text-white'>
         <Divisor Icon={TerminalIcon} alt="Icono Badge" />
       </div>
-      <div className=" estandar-responsive min-h-screen flex flex-col">
+      <div className=" estandar-responsive min-h-screen flex flex-col dark:bg-neutral-900 dark:text-white">
         <ContentProyect />
       </div>
-      <div className='estandar-divisor'>
+      <div className='estandar-divisor dark:bg-neutral-900 dark:text-white'>
         <Divisor Icon={BadgeIcon} alt="Icono Badge" />
       </div>
-      <div className="estandar-responsive min-h-screen flex flex-col">
+      <div className="estandar-responsive min-h-screen flex flex-col dark:bg-neutral-900 dark:text-white">
         <ContentAboutMe />
       </div>
-      <div className='estandar-divisor'>
+      <div className='estandar-divisor dark:bg-neutral-900 dark:text-white'>
         <Divisor Icon={Groups2Icon} alt="Icono Badge" />
       </div>
-      <div className="estandar-responsive min-h-screen flex flex-col">
+      <div className="estandar-responsive min-h-screen flex flex-col dark:bg-neutral-900 dark:text-white">
         <ContentContact />
       </div>
       <Footer />
-    
+
     </>
   );
 }
