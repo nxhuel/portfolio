@@ -1,6 +1,7 @@
 import { ReactTyped } from "react-typed";
 
 export const SectionPresentation = () => {
+    const cvPdf = '/assets/cvTisera.pdf';
     return (
         <>
             <div className=" container flex flex-col">
@@ -9,7 +10,7 @@ export const SectionPresentation = () => {
                         Analista de sistemas | Backend Dev.
                     </div>
                     <div className="  text-start pt-2 sm:pt-10 pl-10 pr-10">
-                        <h2 style={{ userSelect: 'none'}} className="text-2xl sm:text-4xl text-black dark:text-white">
+                        <h2 style={{ userSelect: 'none' }} className="text-2xl sm:text-4xl text-black dark:text-white">
                             <ReactTyped
                                 strings={[
                                     'API RESTfull',
@@ -35,11 +36,13 @@ export const SectionPresentation = () => {
                     </p>
                 </div>
                 <div className="pl-10 card-actions">
-                    <button className="btn border-none bg-primary-dark text-white py-2 px-4 rounded-lg flex items-center gap-2 dark:bg-slate-300 dark:text-black dark:hover:bg-slate-50">
-                        CONTACTO
+                    <button className="btn btn-warning">
+                        <a href="#contacto">CONTACTO</a>
                     </button>
-                    <button className="btn border-none bg-primary-dark text-white py-2 px-4 rounded-lg flex items-center gap-2 dark:bg-slate-300 dark:text-black dark:hover:bg-slate-50">
-                        Ver CV
+                    <button className="btn ">
+                        <a href={cvPdf} target="_blank" rel="noopener noreferrer">
+                            Ver CV
+                        </a>
                     </button>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export const ContentAboutMe = () => {
+    const certficiadoAgip = '/assets/certificado-agip.pdf';
     return (
         <>
             <div className="w-full">
@@ -24,7 +25,9 @@ export const ContentAboutMe = () => {
                                 </p>
                                 <div className="text-right">
                                     <button className="btn border-none bg-primary-dark text-white py-2 px-4 rounded-lg flex items-center gap-2 hover:bg-secondary-content hover:text-black dark:bg-white  dark:text-black dark:hover:bg-black dark:hover:text-white ">
+                                        <a href="https://www.linkedin.com/in/tisera-nahuel-ab3864219/details/certifications/" target="_blank" rel="noopener noreferrer">
                                         Ver estudios complementarios
+                                        </a>
                                         <ArrowForwardIosIcon className="text-sm" />
                                     </button>
                                 </div>
@@ -49,7 +52,7 @@ export const ContentAboutMe = () => {
                                 </p>
                                 <div className="text-right">
                                     <button className="btn border-none bg-primary-dark text-white py-2 px-4 rounded-lg flex items-center gap-2 hover:bg-secondary-content hover:text-black dark:bg-white  dark:text-black dark:hover:bg-black dark:hover:text-white ">
-                                        Ver certificado
+                                    <a href={certficiadoAgip} target="_blank" rel="noopener noreferrer">Ver certificado</a>
                                         <ArrowForwardIosIcon className="text-sm" />
                                     </button>
                                 </div>

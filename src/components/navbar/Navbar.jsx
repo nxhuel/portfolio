@@ -34,10 +34,10 @@ export const Navbar = () => {
                     </div>
                 </div>
                 <div id="default-navbar-collapse" className="md:navbar-end collapse hidden grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full  ">
-                    <ul className="bg-transparent w-100 menu md:menu-horizontal gap-2 md:gap-2 lg:gap-4 xl:gap-4 p-0 text-base columns-3xs">
-                        <li><a href="#" className="bg-gray-200 text-black hover:text-black focus:text-black active:text-black w-100 text-xs sm:text-xs md:text-xs lg:text-base xl:text-base dark:bg-neutral-700 dark:text-white">inicio</a></li>
-                        <li><a href="#" className="bg-gray-200 text-black hover:text-black focus:text-black active:text-black w-100 text-xs sm:text-xs md:text-xs lg:text-base xl:text-base dark:bg-neutral-700 dark:text-white">proyectos</a></li>
-                        <li><a href="#" className="bg-gray-200 text-black hover:text-black focus:text-black active:text-black w-100 text-xs sm:text-xs md:text-xs lg:text-base xl:text-base dark:bg-neutral-700 dark:text-white">sobre mi</a></li>
+                    <ul className="bg-transparent w-100 menu md:menu-horizontal pt-6 sm:pt-0 gap-2 md:gap-2 lg:gap-4 xl:gap-4 p-0 text-base columns-3xs">
+                        <li><a href="#section" className="btn btn-soft btn-warning ">inicio</a></li>
+                        <li><a href="#proyectos" className="btn btn-soft btn-warning">proyectos</a></li>
+                        <li><a href="#sobre-mi" className="btn btn-soft btn-warning">sobre mi</a></li>
                         <label class="swap swap-rotate  dark:text-white">
                             <input type="checkbox" value="dark" class="theme-controller" onClick={handleChangeTheme} />
                             <span class="swap-on icon-[tabler--sun] size-7"></span>
