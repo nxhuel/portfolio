@@ -20,7 +20,7 @@ export const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-transparent p-4 navbar flex flex-col md:flex-row items-center justify-between rounded-lg shadow-lg z-50 w-full max-w-6xl mx-auto dark:bg-neutral-800  dark:text-white">
+            <nav className="fixed top-0 sm:top-5 left-1/2 transform -translate-x-1/2 bg-slate-100 p-4 navbar flex flex-col md:flex-row items-center justify-between sm:rounded-lg shadow-lg z-50 w-full max-w-6xl mx-auto dark:bg-neutral-800  dark:text-white">
                 <div className="flex w-full items-center justify-between ">
                     <div className="navbar-start items-center justify-between max-md:w-full">
                         <a className=" text-black link text-base-content/90 link-neutral text-xl font-semibold no-underline  dark:text-white" href="#">Tisera.DEV</a>

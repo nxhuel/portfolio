@@ -24,7 +24,7 @@ export const ContentAboutMe = () => {
                                     El Instituto de Formación Técnica Superior N°21 está enfocado en la operación, programación y análisis de sistemas informáticos, fortaleciendo la identidad profesional como analistas de sistemas.
                                 </p>
                                 <div className="text-right">
-                                    <button className="btn border-none bg-primary-dark text-white py-2 px-4 rounded-lg flex items-center gap-2 hover:bg-secondary-content hover:text-black dark:bg-white  dark:text-black dark:hover:bg-black dark:hover:text-white ">
+                                    <button className="btn border-none bg-primary-dark text-white h-auto py-2 px-4 rounded-lg flex items-center gap-2 hover:bg-secondary-content hover:text-black dark:bg-white  dark:text-black dark:hover:bg-black dark:hover:text-white ">
                                         <a href="https://www.linkedin.com/in/tisera-nahuel-ab3864219/details/certifications/" target="_blank" rel="noopener noreferrer">
                                         Ver estudios complementarios
                                         </a>

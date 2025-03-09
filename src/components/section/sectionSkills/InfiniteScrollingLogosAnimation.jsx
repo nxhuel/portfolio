@@ -13,6 +13,7 @@ const SkillsLogoData = [
     { src: '/assets/github.png', alt: 'githublogo' },
     { src: '/assets/uml.png', alt: 'umllogo' },
     { src: '/assets/react.png', alt: 'reactlogo' },
+    { src: '/assets/nextjs.png', alt: 'nextjslogo' },
     { src: '/assets/tailwind.png', alt: 'tailwindlogo' },
 ];
 

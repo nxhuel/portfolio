@@ -2,25 +2,15 @@ export const ContentProyect = () => {
     const proyectos = [
         {
             imagen: '/assets/signo-mas-dos.png',
-            titulo: 'Agregar proyecto',
+            titulo: 'AGREGAR PROYECTO',
             proposito: 'Contactame para trabajar juntos',
             tecnologias: [
             ]
         },
         {
-            imagen: '/assets/fondo-library.png',
-            titulo: 'Biblioteca online',
-            proposito: 'Sitio web que permite realizar búsquedas y consultas de libros a través de una API.',
-            tecnologias: [
-                { src: '/assets/javascript.png', alt: 'javascriptlogo' },
-                { src: '/assets/react.png', alt: 'reactlogo' },
-                { src: '/assets/tailwind.png', alt: 'tailwindlogo' },
-            ]
-        },
-        {
             imagen: '/assets/fondo-bazar.png',
-            titulo: 'Ventas Bazar API',
-            proposito: 'Desarollo de un sistema de gestión para un bazar, donde se aplico diversas tecnologías y patrones de diseño.',
+            titulo: 'VENTAS BAZAR - TODOCODE',
+            proposito: 'Sistema de gestión para un bazar con CRUD de productos, clientes y ventas, más funciones extra. Desarrollado en Spring Boot (MVC) con documentación en Swagger y pruebas en JUnit 5 + Mockito.',
             tecnologias: [
                 { src: '/assets/java.png', alt: 'javalogo' },
                 { src: '/assets/spring.png', alt: 'springlogo' },
@@ -28,30 +18,68 @@ export const ContentProyect = () => {
                 { src: '/assets/postman.png', alt: 'postmanlogo' },
                 { src: '/assets/mysql.png', alt: 'mysqllogo' },
                 { src: '/assets/docker.png', alt: 'dockerlogo' },
-            ]
+            ],
+            githubLink: "https://github.com/nxhuel/tp_final_todoCode",
+            pdfLink: "https://raw.githubusercontent.com/nxhuel/tp_final_todoCode/main/Bazar%20%20ApiRest.postman_collection.json",
+        },
+        {
+            imagen: '/assets/fondo-dashboard-clientes.png',
+            titulo: 'DASHBOARD GESTIÓN DE CLIENTES',
+            proposito: 'Plataforma para administrar clientes y rastrear su historial de acciones. Backend en Java + Spring Boot (arquitectura en capas) con MySQL, y frontend en React + Next.js (arquitectura híbrida SSR/SSG) para el enrutamiento.',
+            tecnologias: [
+                { src: '/assets/java.png', alt: 'javalogo' },
+                { src: '/assets/spring.png', alt: 'springlogo' },
+                { src: '/assets/spring-boot.png', alt: 'spring-bootlogo' },
+                { src: '/assets/javascript.png', alt: 'javascriptlogo' },
+                { src: '/assets/react.png', alt: 'reactlogo' },
+                { src: '/assets/nextjs.png', alt: 'nextjslogo' },
+                { src: '/assets/tailwind.png', alt: 'tailwindlogo' },
+            ],
+            githubLink: "https://github.com/nxhuel/backend-customer-management",
+            pdfLink: "https://gestor-clientes.vercel.app/",
         },
         {
             imagen: '/assets/fondo-danza.png',
-            titulo: 'Pagina WEB Bailarina',
-            proposito: 'Sitio web para una bailarina/maestra, donde se pueden consultar clases, horarios, y más información sobre su carrera.',
+            titulo: 'PAGINA WEB PARA BAILARINA',
+            proposito: 'Sitio web para una bailarina/docente, donde se puede consultar clases, horarios, y más información sobre su carrera.',
             tecnologias: [
                 { src: '/assets/javascript.png', alt: 'javascriptlogo' },
                 { src: '/assets/react.png', alt: 'reactlogo' },
+                { src: '/assets/nextjs.png', alt: 'nextjslogo' },
                 { src: '/assets/tailwind.png', alt: 'tailwindlogo' },
-            ]
+            ],
+            githubLink: "https://github.com/nxhuel/clases-danza-pagina-web",
+            pdfLink: "https://alma-en-movimiento.vercel.app/",
         },
         {
             imagen: '/assets/fondo-agip.png',
-            titulo: 'SÚ AGIP',
+            titulo: 'SÚ AGIP - AGIP',
             proposito: 'El sistema de útiles gestiona los pedidos de insumos de librería de todas las áreas del organismo y proporciona información actualizada sobre el stock disponible.',
             tecnologias: [
                 { src: '/assets/python.png', alt: 'pythonlogo' },
                 { src: '/assets/django.png', alt: 'djangologo' },
                 { src: '/assets/javascript.png', alt: 'javascriptlogo' },
                 { src: '/assets/sql-server.png', alt: 'sql-serverlogo' },
-            ]
+            ],
+            githubLink: "https://www.linkedin.com/posts/tisera-nahuel-ab3864219_desarrollodesoftware-django-sqlserver-activity-7268028645330276352-0rdM?utm_source=share&utm_medium=member_desktop&rcm=ACoAADcfNycB8ZWZBHSJpnyES_DKBuctViIczUI",
+            pdfLink: "https://www.linkedin.com/posts/tisera-nahuel-ab3864219_desarrollodesoftware-django-sqlserver-activity-7268028645330276352-0rdM?utm_source=share&utm_medium=member_desktop&rcm=ACoAADcfNycB8ZWZBHSJpnyES_DKBuctViIczUI",
         },
-
+        {
+            imagen: '/assets/fondo-foro-hub.png',
+            titulo: 'FORO HUB - ALURA LATAM',
+            proposito: 'Desarrollo de una API RESTful para la gestión de un foro con Java + Spring Boot. Implementa Spring Security + JWT para autenticación, Redis para caché y MySQL como base de datos.',
+            tecnologias: [
+                { src: '/assets/java.png', alt: 'javalogo' },
+                { src: '/assets/spring.png', alt: 'springlogo' },
+                { src: '/assets/spring-boot.png', alt: 'spring-bootlogo' },
+                { src: '/assets/spring-security.png', alt: 'spring-bootlogo' },
+                { src: '/assets/jwt.png', alt: 'spring-bootlogo' },
+                { src: '/assets/redis.png', alt: 'spring-bootlogo' },
+                { src: '/assets/mysql.png', alt: 'spring-bootlogo' },
+            ],
+            githubLink: "https://github.com/nxhuel/foro_hub",
+            pdfLink: "https://www.linkedin.com/posts/tisera-nahuel-ab3864219_java-springboot-api-activity-7280740137381097473-mHpi?utm_source=share&utm_medium=member_desktop&rcm=ACoAADcfNycB8ZWZBHSJpnyES_DKBuctViIczUI",
+        },
     ];
 
     return (
@@ -72,7 +100,7 @@ export const ContentProyect = () => {
                                 />
                             </figure>
                         </div>
-                        <div className="p-6">
+                        <div className="p-2 sm:p-6">
                             <h5 className="text-xl font-bold mb-2 text-dark hover:text-orange-500 transition-colors duration-300">
                                 {proyecto.titulo}
                             </h5>
@@ -89,23 +117,34 @@ export const ContentProyect = () => {
                             </div>
                             {index !== 0 ? (
                                 <div className="flex gap-4">
-                                    <button className="btn bg-primary-dark text-white border-none px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
-                                        Más Info
-                                    </button>
-                                    <button className="btn bg-secondary-content border-none  text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors duration-300">
-                                        Acceder al Código
-                                    </button>
+                                    <a
+                                        href={proyecto.githubLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn bg-primary-dark text-white border-none px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300"
+                                    >
+                                        Github
+                                    </a>
+                                    <a
+                                        href={proyecto.pdfLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn bg-secondary-content text-gray-800 border-none px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors duration-300"
+                                    >
+                                        Ver más
+                                    </a>
                                 </div>
                             ) : (
                                 <div className="flex gap-4">
-                                    <button className="btn bg-primary-dark text-white border-none  px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
-                                    <a href="#contacto">Contacto</a>
+                                    <button className="btn bg-primary-dark text-white border-none px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors duration-300">
+                                        <a href="#contacto">Contacto</a>
                                     </button>
                                 </div>
                             )}
                         </div>
                     </div>
                 ))}
+
             </main>
         </div>
     );
