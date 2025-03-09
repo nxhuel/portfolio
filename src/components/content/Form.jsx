@@ -14,8 +14,8 @@ export const Form = () => {
             message: { name, lastname, email, content }
         };
         
-        FormService.sendMessage(newMessage)
-        .then((response) => {
+        FormService.sendMessage(newMessage).then((response) => {
+            console.log(response);
             alert("¡Mensaje enviado exitosamente!");
             window.location.reload();
         }).catch(err => {
