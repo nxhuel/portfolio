@@ -4,7 +4,12 @@ import { themeChange } from 'theme-change';
 themeChange();
 
 export const Navbar = () => {
-    const [theme,  setTheme] = useState("light");
+    const [theme, setTheme] = useState("light");
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const handleToggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     useEffect(() => {
         if (theme === "dark") {
@@ -26,14 +31,18 @@ export const Navbar = () => {
                         <a className=" text-black link text-base-content/90 link-neutral text-xl font-semibold no-underline  dark:text-white" href="#">Tisera.DEV</a>
 
                         <div class="md:hidden ">
-                            <button type="button" class="collapse-toggle btn btn-outline btn-secondary btn-sm btn-square" data-collapse="#default-navbar-collapse" aria-controls="default-navbar-collapse" aria-label="Toggle navigation">
-                                <span class="icon-[tabler--menu-2] collapse-open:hidden size-4 "></span>
-                                <span class="icon-[tabler--x] collapse-open:block hidden size-4"></span>
+                            <button type="button"
+                                className="collapse-toggle btn btn-outline btn-secondary btn-sm btn-square" data-collapse="#default-navbar-collapse"
+                                onClick={handleToggleMenu}
+                                aria-controls="default-navbar-collapse" aria-label="Toggle navigation">
+                                <span className={`icon-[tabler--menu-2] ${isMenuOpen ? 'hidden' : ''} size-4`}></span>
+                                <span className={`icon-[tabler--x] ${isMenuOpen ? '' : 'hidden'} size-4`}></span>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div id="default-navbar-collapse" className="md:navbar-end collapse hidden grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full  ">
+                <div id="default-navbar-collapse"
+                    className={`md:navbar-end ${isMenuOpen ? 'block' : 'hidden'} grow basis-full overflow-hidden transition-all duration-300 max-md:w-full`}>
                     <ul className="bg-transparent w-100 menu md:menu-horizontal pt-6 sm:pt-0 gap-2 md:gap-2 lg:gap-4 xl:gap-4 p-0 text-base columns-3xs">
                         <li><a href="#section" className="btn btn-soft btn-warning ">inicio</a></li>
                         <li><a href="#proyectos" className="btn btn-soft btn-warning">proyectos</a></li>
